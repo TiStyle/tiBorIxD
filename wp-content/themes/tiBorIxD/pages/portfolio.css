@@ -31,31 +31,35 @@ body.single-portfolio .tiSlide {
       body.single-portfolio .tiSlide .content .entry-title a {
         color: white; }
     /* line 32, ../Sass/pages/portfolio.scss */
+    body.single-portfolio .tiSlide .content .scrollable {
+      height: inherit;
+      overflow-y: auto; }
+    /* line 36, ../Sass/pages/portfolio.scss */
     body.single-portfolio .tiSlide .content h4 {
       margin: 7px 0;
       font-size: .9em;
       font-weight: 100;
       line-height: 1.2em; }
-    /* line 38, ../Sass/pages/portfolio.scss */
+    /* line 42, ../Sass/pages/portfolio.scss */
     body.single-portfolio .tiSlide .content p {
       font-size: .8em;
       font-weight: normal;
       line-height: 1.4em; }
-  /* line 44, ../Sass/pages/portfolio.scss */
+  /* line 48, ../Sass/pages/portfolio.scss */
   body.single-portfolio .tiSlide .cycle-slide {
     max-width: 100%; }
-  /* line 47, ../Sass/pages/portfolio.scss */
+  /* line 51, ../Sass/pages/portfolio.scss */
   body.single-portfolio .tiSlide .cycle-pager, body.single-portfolio .tiSlide .slide-control {
     position: relative;
     display: block;
     z-index: 999; }
-  /* line 52, ../Sass/pages/portfolio.scss */
+  /* line 56, ../Sass/pages/portfolio.scss */
   body.single-portfolio .tiSlide .cycle-pager {
     position: relative;
     display: table;
     margin: 0 auto;
     top: 90%; }
-    /* line 57, ../Sass/pages/portfolio.scss */
+    /* line 61, ../Sass/pages/portfolio.scss */
     body.single-portfolio .tiSlide .cycle-pager span {
       width: 10px;
       height: 10px;
@@ -70,78 +74,78 @@ body.single-portfolio .tiSlide {
       -webkit-transform: rotate(45deg);
       -moz-transform: rotate(45deg);
       -o-transform: rotate(45deg); }
-    /* line 72, ../Sass/pages/portfolio.scss */
+    /* line 76, ../Sass/pages/portfolio.scss */
     body.single-portfolio .tiSlide .cycle-pager .cycle-pager-active {
       background: #60c2d3; }
-  /* line 76, ../Sass/pages/portfolio.scss */
+  /* line 80, ../Sass/pages/portfolio.scss */
   body.single-portfolio .tiSlide .slide-control {
     display: block;
     width: 66%;
     top: 40%;
     padding: 0 2%; }
-    /* line 81, ../Sass/pages/portfolio.scss */
+    /* line 85, ../Sass/pages/portfolio.scss */
     body.single-portfolio .tiSlide .slide-control .slide-prev {
       cursor: pointer; }
-      /* line 83, ../Sass/pages/portfolio.scss */
+      /* line 87, ../Sass/pages/portfolio.scss */
       body.single-portfolio .tiSlide .slide-control .slide-prev i {
         float: left;
         font-size: 3em;
         font-size: 4vmax;
         color: white;
         text-shadow: 10px 0 10px #2ca6b8, 2px 0 5px #2ca6b8; }
-        /* line 89, ../Sass/pages/portfolio.scss */
+        /* line 93, ../Sass/pages/portfolio.scss */
         body.single-portfolio .tiSlide .slide-control .slide-prev i:hover {
           transform: scale(1.2);
           -webkit-transform: scale(1.2);
           -moz-transform: scale(1.2);
           -o-transform: scale(1.2); }
-    /* line 97, ../Sass/pages/portfolio.scss */
+    /* line 101, ../Sass/pages/portfolio.scss */
     body.single-portfolio .tiSlide .slide-control .slide-next {
       cursor: pointer; }
-      /* line 99, ../Sass/pages/portfolio.scss */
+      /* line 103, ../Sass/pages/portfolio.scss */
       body.single-portfolio .tiSlide .slide-control .slide-next i {
         float: right;
         font-size: 3em;
         font-size: 4vmax;
         color: white;
         text-shadow: -10px 0 10px #2ca6b8, -2px 0 5px #2ca6b8; }
-        /* line 105, ../Sass/pages/portfolio.scss */
+        /* line 109, ../Sass/pages/portfolio.scss */
         body.single-portfolio .tiSlide .slide-control .slide-next i:hover {
           transform: scale(1.2);
           -webkit-transform: scale(1.2);
           -moz-transform: scale(1.2);
           -o-transform: scale(1.2); }
-/* line 115, ../Sass/pages/portfolio.scss */
+/* line 119, ../Sass/pages/portfolio.scss */
 body.single-portfolio .aside {
   position: absolute;
   width: 100%;
   left: 0;
   top: 40%; }
-  /* line 120, ../Sass/pages/portfolio.scss */
+  /* line 124, ../Sass/pages/portfolio.scss */
   body.single-portfolio .aside .nav-previous {
     position: relative;
     float: left;
     left: -50px;
     font-size: 6em; }
-    /* line 126, ../Sass/pages/portfolio.scss */
+    /* line 130, ../Sass/pages/portfolio.scss */
     body.single-portfolio .aside .nav-previous i:hover {
       transform: scale(1.2);
       -webkit-transform: scale(1.2);
       -moz-transform: scale(1.2);
       -o-transform: scale(1.2); }
-  /* line 134, ../Sass/pages/portfolio.scss */
+  /* line 138, ../Sass/pages/portfolio.scss */
   body.single-portfolio .aside .nav-next {
     position: relative;
     float: right;
     left: 50px;
     font-size: 6em; }
-    /* line 140, ../Sass/pages/portfolio.scss */
+    /* line 144, ../Sass/pages/portfolio.scss */
     body.single-portfolio .aside .nav-next i:hover {
       transform: scale(1.2);
       -webkit-transform: scale(1.2);
       -moz-transform: scale(1.2);
       -o-transform: scale(1.2); }
-  /* line 148, ../Sass/pages/portfolio.scss */
+  /* line 152, ../Sass/pages/portfolio.scss */
   body.single-portfolio .aside i {
     color: transparent;
     text-shadow: 0 0 0px white, 0 0 15px rgba(0, 0, 0, 0.5); }

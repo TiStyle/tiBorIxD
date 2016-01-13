@@ -16,21 +16,22 @@
                                 <br/>                            
                                 
                                 <?php edit_post_link('<i class="fa fa-pencil"></i>'); ?>
-                                
-                                <p><?php the_content(); ?></p>                            
-                                
-                                <br/>                            
-                                
-                                <h4>Type: <?php the_field('project_type'); ?></h4>
-                                <h4>Skills: <?php the_field('skills'); ?></h4>
-                                <h4>Customer: <?php the_field('klant'); ?></h4>
-                                <h4>Date: 
-                                    <?php $date = DateTime::createFromFormat('Ymd', get_field('jaar'));
-                                    echo $date->format('d-m-Y'); ?></h4>
-                                
-                                <br/>
-                                
-                                <!--<?php if ( !is_search() ) get_template_part( 'entry-footer' ); ?>-->
+                                <div class="scrollable">
+                                    <p><?php the_content(); ?></p>                            
+                                    
+                                    <br/>                            
+                                    
+                                    <h4>Type: <?php the_field('project_type'); ?></h4>
+                                    <h4>Skills: <?php the_field('skills'); ?></h4>
+                                    <h4>Customer: <?php the_field('klant'); ?></h4>
+                                    <h4>Date: 
+                                        <?php $date = DateTime::createFromFormat('Ymd', get_field('jaar'));
+                                        echo $date->format('d-m-Y'); ?></h4>
+                                    
+                                    <br/>
+                                    
+                                    <!--<?php if ( !is_search() ) get_template_part( 'entry-footer' ); ?>-->
+                                </div>
                                     
                             </div>
                             
