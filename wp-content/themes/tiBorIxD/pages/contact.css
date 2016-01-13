@@ -1,0 +1,141 @@
+/* Color palette */
+/* Text color palette */
+/* Font sizes */
+/* line 3, ../Sass/pages/contact.scss */
+.contactInfo {
+  margin: 20% auto;
+  font-size: 1.2em;
+  line-height: 1.6em; }
+  /* line 7, ../Sass/pages/contact.scss */
+  .contactInfo a:hover {
+    color: #60c2d3 !important; }
+  /* line 10, ../Sass/pages/contact.scss */
+  .contactInfo i {
+    width: 30px;
+    color: #60c2d3; }
+
+/* Forms */
+/* line 17, ../Sass/pages/contact.scss */
+input, textarea {
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  outline-color: transparent !important; }
+
+/* line 23, ../Sass/pages/contact.scss */
+fieldset > input[type="text"]:invalid,
+fieldset > input[type="email"]:invalid,
+fieldset > input[type="search"]:invalid,
+fieldset > input[type="password"]:invalid,
+fieldset > input[type="url"]:invalid,
+fieldset > textarea:invalid {
+  border: 1px solid #2ca6b8; }
+
+/* line 41, ../Sass/pages/contact.scss */
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="password"],
+input[type="url"],
+textarea {
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
+  appearance: none !important; }
+
+/* line 52, ../Sass/pages/contact.scss */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="url"],
+textarea {
+  padding: 10px;
+  border: 1px solid #eaeaea;
+  line-height: 20px;
+  width: calc(100% - 22px);
+  margin: 0 0 30px;
+  background-color: #e7e7e7; }
+
+/* line 65, ../Sass/pages/contact.scss */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="search"]:focus,
+input[type="password"]:focus,
+input[type="url"]:focus,
+textarea:focus {
+  border: 1px solid #ccc; }
+
+/* line 74, ../Sass/pages/contact.scss */
+input.s {
+  background: url(images/search.png) no-repeat right 6px white;
+  -webkit-transition-duration: 400ms;
+  -webkit-transition-property: width, background;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-duration: 400ms;
+  -moz-transition-property: width, background;
+  -moz-transition-timing-function: ease;
+  -o-transition-duration: 400ms;
+  -o-transition-property: width, background;
+  -o-transition-timing-function: ease;
+  width: 0;
+  padding: 3px 33px 3px 0;
+  height: 34px;
+  color: #bbb;
+  font-style: italic;
+  margin: 0;
+  border-color: transparent;
+  cursor: pointer;
+  text-indent: 25px; }
+
+/* line 96, ../Sass/pages/contact.scss */
+input.s:focus {
+  width: 100px;
+  padding-left: 10px;
+  border-color: #eaeaea;
+  text-indent: 0; }
+
+/* line 103, ../Sass/pages/contact.scss */
+input[type="reset"],
+input[type="button"],
+input[type="submit"] {
+  border: 1px solid #2ca6b8;
+  color: white;
+  display: inline-block;
+  height: 40px;
+  margin-bottom: 30px;
+  padding: 0px 25px;
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  cursor: pointer;
+  background: #60c2d3;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3); }
+
+/* line 122, ../Sass/pages/contact.scss */
+input[type="reset"]:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+  background: -webkit-linear-gradient(#06C0E1, #05aac6);
+  background: -moz-linear-gradient(#06C0E1, #05aac6);
+  background: -ms-linear-gradient(#06C0E1, #05aac6);
+  background: -o-linear-gradient(#06C0E1, #05aac6);
+  background: -webkit-gradient(#06C0E1, #05aac6);
+  background: linear-gradient(#06C0E1, #05aac6); }
+
+/* line 133, ../Sass/pages/contact.scss */
+input[type="reset"]:active,
+input[type="button"]:active,
+input[type="submit"]:active {
+  -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3); }
+
+/* Links */
+/* line 142, ../Sass/pages/contact.scss */
+a {
+  color: #9ABF3C;
+  text-decoration: none; }
+
+/* line 147, ../Sass/pages/contact.scss */
+a:focus, a:active, a:hover {
+  text-decoration: none; }

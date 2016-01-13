@@ -1,0 +1,149 @@
+@import "_partials/variables";
+
+.contactInfo{
+    margin:20% auto;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    a:hover{
+        color: $primary-color !important;
+    }
+    i{
+        width:30px;
+        color: $primary-color;
+    }
+}
+
+/* Forms */
+input, textarea {
+    border-radius: 0px;    
+    -webkit-border-radius: 0px;
+    outline-color: transparent !important;
+}
+
+fieldset > input[type="text"]:invalid,
+fieldset > input[type="email"]:invalid,
+fieldset > input[type="search"]:invalid,
+fieldset > input[type="password"]:invalid,
+fieldset > input[type="url"]:invalid,
+fieldset > textarea:invalid {
+    border: 1px solid $secondary-color;
+}
+
+fieldset > input[type="text"]:valid,
+fieldset > input[type="email"]:valid,
+fieldset > input[type="search"]:valid,
+fieldset > input[type="password"]:valid,
+fieldset > input[type="url"]:valid,
+fieldset > textarea:valid {
+    
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="search"],
+input[type="password"],
+input[type="url"],
+textarea {
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
+    appearance: none !important;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="password"],
+input[type="url"],
+textarea {
+    padding: 10px;
+    border: 1px solid #eaeaea;
+    line-height: 20px;
+    width: calc(100% - 22px);
+    margin: 0 0 30px;
+    background-color: $tertiary-color;
+}
+
+input[type="text"]:focus, 
+input[type="email"]:focus, 
+input[type="search"]:focus,
+input[type="password"]:focus,
+input[type="url"]:focus, 
+textarea:focus {
+    border: 1px solid #ccc;
+}
+
+input.s {
+    background: url(images/search.png) no-repeat right 6px white;
+    -webkit-transition-duration: 400ms;
+    -webkit-transition-property: width, background;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-duration: 400ms;
+    -moz-transition-property: width, background;
+    -moz-transition-timing-function: ease;
+    -o-transition-duration: 400ms;
+    -o-transition-property: width, background;
+    -o-transition-timing-function: ease;
+    width: 0;
+    padding: 3px 33px 3px 0;
+    height: 34px;
+    color: #bbb;
+    font-style: italic;
+    margin: 0;
+    border-color: transparent;
+    cursor: pointer;
+    text-indent: 25px;
+}
+
+input.s:focus {
+    width: 100px;
+    padding-left: 10px;
+    border-color: #eaeaea;
+    text-indent: 0;
+}
+
+input[type="reset"], 
+input[type="button"], 
+input[type="submit"] {
+    border: 1px solid $secondary-color;
+    color: white;
+    display: inline-block;
+    height: 40px;
+    margin-bottom: 30px;
+    padding: 0px 25px;
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
+    appearance: none !important;
+    cursor: pointer;
+    background: $primary-color;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+input[type="reset"]:hover, 
+input[type="button"]:hover, 
+input[type="submit"]:hover {
+    background: -webkit-linear-gradient(#06C0E1, #05aac6);
+    background: -moz-linear-gradient(#06C0E1, #05aac6);
+    background: -ms-linear-gradient(#06C0E1, #05aac6);
+    background: -o-linear-gradient(#06C0E1, #05aac6);
+    background: -webkit-gradient(#06C0E1, #05aac6);
+    background: linear-gradient(#06C0E1, #05aac6);
+}
+
+input[type="reset"]:active, 
+input[type="button"]:active, 
+input[type="submit"]:active {
+    -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Links */
+a {
+    color: #9ABF3C;
+    text-decoration: none;
+}
+
+a:focus, a:active, a:hover {
+    text-decoration: none;
+}

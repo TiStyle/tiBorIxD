@@ -1,0 +1,123 @@
+/* Color palette */
+/* Text color palette */
+/* Font sizes */
+/* line 4, ../Sass/pages/home.scss */
+body.page-portfolio .item {
+  position: relative;
+  width: 33.08%;
+  bottom: 0;
+  display: inline-block;
+  float: left;
+  margin: 0.2% 0 0 0.2%;
+  background-color: rgba(231, 231, 231, 0.8);
+  box-shadow: 0 0px 10px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 2px; }
+  @media only screen and (max-width: 992px) {
+    /* line 4, ../Sass/pages/home.scss */
+    body.page-portfolio .item {
+      width: 100%;
+      display: block;
+      margin-bottom: 0.8%; } }
+  /* line 20, ../Sass/pages/home.scss */
+  body.page-portfolio .item:hover {
+    /*bottom: -10px;*/
+    box-shadow: 0 0px 15px 2px rgba(0, 0, 0, 0.4);
+    transition: 0.2s all ease-out;
+    -webkit-transition: 0.2s all ease-out;
+    -moz-transition: 0.2s all ease-out;
+    -o-transition: 0.2s all ease-out;
+    -ms-transition: 0.2s all ease-out; }
+    /* line 29, ../Sass/pages/home.scss */
+    body.page-portfolio .item:hover .content {
+      position: absolute;
+      display: block !important;
+      top: 0;
+      visibility: visible;
+      opacity: 1;
+      transition: 0.2s opacity ease-out;
+      -webkit-transition: 0.2s opacity ease-out;
+      -moz-transition: 0.2s opacity ease-out;
+      -o-transition: 0.2s opacity ease-out;
+      -ms-transition: 0.2s opacity ease-out; }
+  /* line 44, ../Sass/pages/home.scss */
+  body.page-portfolio .item .image {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    margin-right: 0px;
+    color: #f8f8f9;
+    overflow: hidden; }
+    /* line 51, ../Sass/pages/home.scss */
+    body.page-portfolio .item .image img {
+      position: relative;
+      min-width: 120%;
+      max-width: 150%;
+      height: auto;
+      left: -10%;
+      display: block;
+      font-size: 21px;
+      text-align: center; }
+      /* line 61, ../Sass/pages/home.scss */
+      body.page-portfolio .item .image img span:first-child {
+        font-weight: bold; }
+      /* line 64, ../Sass/pages/home.scss */
+      body.page-portfolio .item .image img span:nth-child(2) {
+        font-size: 36px;
+        padding: 2px 5px; }
+    /* line 70, ../Sass/pages/home.scss */
+    body.page-portfolio .item .image i {
+      position: relative;
+      display: table;
+      margin: 15% auto;
+      font-size: 8em; }
+  /* line 77, ../Sass/pages/home.scss */
+  body.page-portfolio .item .content {
+    position: absolute;
+    display: block;
+    top: 0;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    color: white;
+    padding: 20px;
+    background-color: rgba(44, 166, 184, 0.8);
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.4em;
+    letter-spacing: .1em;
+    word-spacing: .2em;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s opacity ease-out;
+    -webkit-transition: 0.2s opacity ease-out;
+    -moz-transition: 0.2s opacity ease-out;
+    -o-transition: 0.2s opacity ease-out;
+    -ms-transition: 0.2s opacity ease-out; }
+    /* line 100, ../Sass/pages/home.scss */
+    body.page-portfolio .item .content .itemTitle {
+      width: 100%;
+      display: block;
+      position: relative;
+      margin: 0 0 20px 0;
+      color: white;
+      font-size: 16px;
+      font-weight: normal;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    /* line 114, ../Sass/pages/home.scss */
+    body.page-portfolio .item .content a:link, body.page-portfolio .item .content a:visited {
+      display: table;
+      margin: 10% auto;
+      color: white;
+      text-decoration: none; }
+    /* line 121, ../Sass/pages/home.scss */
+    body.page-portfolio .item .content .fa {
+      font-size: 21px; }
+      /* line 123, ../Sass/pages/home.scss */
+      body.page-portfolio .item .content .fa:hover {
+        font-size: 36px;
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg); }

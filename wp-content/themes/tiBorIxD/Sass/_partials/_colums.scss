@@ -1,0 +1,12 @@
+.hcenter{
+    display: table;
+    margin:0 auto;
+}
+
+.col50{
+    width: calc(50% - 30px);
+    float: left;
+    display: inline-block;
+    box-sizing: content-box;
+    margin: 0 15px;
+}

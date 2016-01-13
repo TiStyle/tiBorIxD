@@ -1,0 +1,804 @@
+@charset "UTF-8";
+/*
+Theme Name: tiBorIxD
+Theme URI: http://ti-bor.nl/
+Author: Tibor Dujmovic
+Author URI: http://ti-bor.nl/
+Description: This is a theme created by: <strong><a href="www.ti-bor.nl" target="_blank">tiBor interAction deSign</a></strong>.
+License: GNU General Public License
+License URI: https://www.gnu.org/licenses/gpl.html
+Tags: black, blue, white, light, one-column, fluid-layout, responsive-layout, custom-menu, featured-images, microformats, sticky-post, threaded-comments, translation-ready
+Text Domain: tiBorIxD
+
+tiBorIxD WordPress Theme © 2016 tiBor
+tiBorIxD is distributed under the terms of the GNU GPL
+*/
+/* line 5, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/* Color palette */
+/* Text color palette */
+/* Font sizes */
+/* line 1, Sass/_partials/_colums.scss */
+.hcenter {
+  display: table;
+  margin: 0 auto; }
+
+/* line 6, Sass/_partials/_colums.scss */
+.col50 {
+  width: calc(50% - 30px);
+  float: left;
+  display: inline-block;
+  box-sizing: content-box;
+  margin: 0 15px; }
+
+/* Color palette */
+/* Text color palette */
+/* Font sizes */
+/* line 4, Sass/pages/home.scss */
+body.page-portfolio .item {
+  position: relative;
+  width: 33.08%;
+  bottom: 0;
+  display: inline-block;
+  float: left;
+  margin: 0.2% 0 0 0.2%;
+  background-color: rgba(231, 231, 231, 0.8);
+  box-shadow: 0 0px 10px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 2px; }
+  @media only screen and (max-width: 992px) {
+    /* line 4, Sass/pages/home.scss */
+    body.page-portfolio .item {
+      width: 100%;
+      display: block;
+      margin-bottom: 0.8%; } }
+  /* line 20, Sass/pages/home.scss */
+  body.page-portfolio .item:hover {
+    /*bottom: -10px;*/
+    box-shadow: 0 0px 15px 2px rgba(0, 0, 0, 0.4);
+    transition: 0.2s all ease-out;
+    -webkit-transition: 0.2s all ease-out;
+    -moz-transition: 0.2s all ease-out;
+    -o-transition: 0.2s all ease-out;
+    -ms-transition: 0.2s all ease-out; }
+    /* line 29, Sass/pages/home.scss */
+    body.page-portfolio .item:hover .content {
+      position: absolute;
+      display: block !important;
+      top: 0;
+      visibility: visible;
+      opacity: 1;
+      transition: 0.2s opacity ease-out;
+      -webkit-transition: 0.2s opacity ease-out;
+      -moz-transition: 0.2s opacity ease-out;
+      -o-transition: 0.2s opacity ease-out;
+      -ms-transition: 0.2s opacity ease-out; }
+  /* line 44, Sass/pages/home.scss */
+  body.page-portfolio .item .image {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    margin-right: 0px;
+    color: #f8f8f9;
+    overflow: hidden; }
+    /* line 51, Sass/pages/home.scss */
+    body.page-portfolio .item .image img {
+      position: relative;
+      min-width: 120%;
+      max-width: 150%;
+      height: auto;
+      left: -10%;
+      display: block;
+      font-size: 21px;
+      text-align: center; }
+      /* line 61, Sass/pages/home.scss */
+      body.page-portfolio .item .image img span:first-child {
+        font-weight: bold; }
+      /* line 64, Sass/pages/home.scss */
+      body.page-portfolio .item .image img span:nth-child(2) {
+        font-size: 36px;
+        padding: 2px 5px; }
+    /* line 70, Sass/pages/home.scss */
+    body.page-portfolio .item .image i {
+      position: relative;
+      display: table;
+      margin: 15% auto;
+      font-size: 8em; }
+  /* line 77, Sass/pages/home.scss */
+  body.page-portfolio .item .content {
+    position: absolute;
+    display: block;
+    top: 0;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    color: white;
+    padding: 20px;
+    background-color: rgba(44, 166, 184, 0.8);
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.4em;
+    letter-spacing: .1em;
+    word-spacing: .2em;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s opacity ease-out;
+    -webkit-transition: 0.2s opacity ease-out;
+    -moz-transition: 0.2s opacity ease-out;
+    -o-transition: 0.2s opacity ease-out;
+    -ms-transition: 0.2s opacity ease-out; }
+    /* line 100, Sass/pages/home.scss */
+    body.page-portfolio .item .content .itemTitle {
+      width: 100%;
+      display: block;
+      position: relative;
+      margin: 0 0 20px 0;
+      color: white;
+      font-size: 16px;
+      font-weight: normal;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    /* line 114, Sass/pages/home.scss */
+    body.page-portfolio .item .content a:link, body.page-portfolio .item .content a:visited {
+      display: table;
+      margin: 10% auto;
+      color: white;
+      text-decoration: none; }
+    /* line 121, Sass/pages/home.scss */
+    body.page-portfolio .item .content .fa {
+      font-size: 21px; }
+      /* line 123, Sass/pages/home.scss */
+      body.page-portfolio .item .content .fa:hover {
+        font-size: 36px;
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg); }
+
+/* Color palette */
+/* Text color palette */
+/* Font sizes */
+/* line 4, Sass/pages/portfolio.scss */
+body.single-portfolio .tiSlide {
+  overflow: hidden; }
+  /* line 6, Sass/pages/portfolio.scss */
+  body.single-portfolio .tiSlide .content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: calc(353px - 60px);
+    width: calc(30% - 60px);
+    height: calc(100% - 39px);
+    display: block;
+    padding: 20px 30px;
+    background-color: rgba(44, 166, 184, 0.8);
+    color: #f8f8f9;
+    font-size: 1.2em;
+    font-weight: lighter;
+    z-index: 1000; }
+    /* line 20, Sass/pages/portfolio.scss */
+    body.single-portfolio .tiSlide .content .entry-title {
+      color: white;
+      text-align: left;
+      font-size: 1.4em;
+      padding-bottom: 20px;
+      margin-bottom: 0;
+      border-bottom: 1px solid white; }
+      /* line 28, Sass/pages/portfolio.scss */
+      body.single-portfolio .tiSlide .content .entry-title a {
+        color: white; }
+    /* line 32, Sass/pages/portfolio.scss */
+    body.single-portfolio .tiSlide .content h4 {
+      margin: 7px 0;
+      font-size: .9em;
+      font-weight: 100;
+      line-height: 1.2em; }
+    /* line 38, Sass/pages/portfolio.scss */
+    body.single-portfolio .tiSlide .content p {
+      font-size: .8em;
+      font-weight: normal;
+      line-height: 1.4em; }
+  /* line 44, Sass/pages/portfolio.scss */
+  body.single-portfolio .tiSlide .cycle-slide {
+    max-width: 100%; }
+  /* line 47, Sass/pages/portfolio.scss */
+  body.single-portfolio .tiSlide .cycle-pager, body.single-portfolio .tiSlide .slide-control {
+    position: relative;
+    display: block;
+    z-index: 999; }
+  /* line 52, Sass/pages/portfolio.scss */
+  body.single-portfolio .tiSlide .cycle-pager {
+    position: relative;
+    display: table;
+    margin: 0 auto;
+    top: 90%; }
+    /* line 57, Sass/pages/portfolio.scss */
+    body.single-portfolio .tiSlide .cycle-pager span {
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      margin: 0 10px;
+      background: transparent;
+      color: transparent;
+      border: 1px solid white;
+      box-shadow: 0 0 0 1px #2ca6b8;
+      cursor: pointer;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg); }
+    /* line 72, Sass/pages/portfolio.scss */
+    body.single-portfolio .tiSlide .cycle-pager .cycle-pager-active {
+      background: #60c2d3; }
+  /* line 76, Sass/pages/portfolio.scss */
+  body.single-portfolio .tiSlide .slide-control {
+    display: block;
+    width: 66%;
+    top: 40%;
+    padding: 0 2%; }
+    /* line 81, Sass/pages/portfolio.scss */
+    body.single-portfolio .tiSlide .slide-control .slide-prev {
+      cursor: pointer; }
+      /* line 83, Sass/pages/portfolio.scss */
+      body.single-portfolio .tiSlide .slide-control .slide-prev i {
+        float: left;
+        font-size: 3em;
+        font-size: 4vmax;
+        color: white;
+        text-shadow: 10px 0 10px #2ca6b8, 2px 0 5px #2ca6b8; }
+        /* line 89, Sass/pages/portfolio.scss */
+        body.single-portfolio .tiSlide .slide-control .slide-prev i:hover {
+          transform: scale(1.2);
+          -webkit-transform: scale(1.2);
+          -moz-transform: scale(1.2);
+          -o-transform: scale(1.2); }
+    /* line 97, Sass/pages/portfolio.scss */
+    body.single-portfolio .tiSlide .slide-control .slide-next {
+      cursor: pointer; }
+      /* line 99, Sass/pages/portfolio.scss */
+      body.single-portfolio .tiSlide .slide-control .slide-next i {
+        float: right;
+        font-size: 3em;
+        font-size: 4vmax;
+        color: white;
+        text-shadow: -10px 0 10px #2ca6b8, -2px 0 5px #2ca6b8; }
+        /* line 105, Sass/pages/portfolio.scss */
+        body.single-portfolio .tiSlide .slide-control .slide-next i:hover {
+          transform: scale(1.2);
+          -webkit-transform: scale(1.2);
+          -moz-transform: scale(1.2);
+          -o-transform: scale(1.2); }
+/* line 115, Sass/pages/portfolio.scss */
+body.single-portfolio .aside {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 40%; }
+  /* line 120, Sass/pages/portfolio.scss */
+  body.single-portfolio .aside .nav-previous {
+    position: relative;
+    float: left;
+    left: -50px;
+    font-size: 6em; }
+    /* line 126, Sass/pages/portfolio.scss */
+    body.single-portfolio .aside .nav-previous i:hover {
+      transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -o-transform: scale(1.2); }
+  /* line 134, Sass/pages/portfolio.scss */
+  body.single-portfolio .aside .nav-next {
+    position: relative;
+    float: right;
+    left: 50px;
+    font-size: 6em; }
+    /* line 140, Sass/pages/portfolio.scss */
+    body.single-portfolio .aside .nav-next i:hover {
+      transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -o-transform: scale(1.2); }
+  /* line 148, Sass/pages/portfolio.scss */
+  body.single-portfolio .aside i {
+    color: transparent;
+    text-shadow: 0 0 0px white, 0 0 15px rgba(0, 0, 0, 0.5); }
+
+/* Color palette */
+/* Text color palette */
+/* Font sizes */
+/* line 3, Sass/pages/contact.scss */
+.contactInfo {
+  margin: 20% auto;
+  font-size: 1.2em;
+  line-height: 1.6em; }
+  /* line 7, Sass/pages/contact.scss */
+  .contactInfo a:hover {
+    color: #60c2d3 !important; }
+  /* line 10, Sass/pages/contact.scss */
+  .contactInfo i {
+    width: 30px;
+    color: #60c2d3; }
+
+/* Forms */
+/* line 17, Sass/pages/contact.scss */
+input, textarea {
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  outline-color: transparent !important; }
+
+/* line 23, Sass/pages/contact.scss */
+fieldset > input[type="text"]:invalid,
+fieldset > input[type="email"]:invalid,
+fieldset > input[type="search"]:invalid,
+fieldset > input[type="password"]:invalid,
+fieldset > input[type="url"]:invalid,
+fieldset > textarea:invalid {
+  border: 1px solid #2ca6b8; }
+
+/* line 41, Sass/pages/contact.scss */
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="password"],
+input[type="url"],
+textarea {
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
+  appearance: none !important; }
+
+/* line 52, Sass/pages/contact.scss */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="url"],
+textarea {
+  padding: 10px;
+  border: 1px solid #eaeaea;
+  line-height: 20px;
+  width: calc(100% - 22px);
+  margin: 0 0 30px;
+  background-color: #e7e7e7; }
+
+/* line 65, Sass/pages/contact.scss */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="search"]:focus,
+input[type="password"]:focus,
+input[type="url"]:focus,
+textarea:focus {
+  border: 1px solid #ccc; }
+
+/* line 74, Sass/pages/contact.scss */
+input.s {
+  background: url(images/search.png) no-repeat right 6px white;
+  -webkit-transition-duration: 400ms;
+  -webkit-transition-property: width, background;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-duration: 400ms;
+  -moz-transition-property: width, background;
+  -moz-transition-timing-function: ease;
+  -o-transition-duration: 400ms;
+  -o-transition-property: width, background;
+  -o-transition-timing-function: ease;
+  width: 0;
+  padding: 3px 33px 3px 0;
+  height: 34px;
+  color: #bbb;
+  font-style: italic;
+  margin: 0;
+  border-color: transparent;
+  cursor: pointer;
+  text-indent: 25px; }
+
+/* line 96, Sass/pages/contact.scss */
+input.s:focus {
+  width: 100px;
+  padding-left: 10px;
+  border-color: #eaeaea;
+  text-indent: 0; }
+
+/* line 103, Sass/pages/contact.scss */
+input[type="reset"],
+input[type="button"],
+input[type="submit"] {
+  border: 1px solid #2ca6b8;
+  color: white;
+  display: inline-block;
+  height: 40px;
+  margin-bottom: 30px;
+  padding: 0px 25px;
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  cursor: pointer;
+  background: #60c2d3;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3); }
+
+/* line 122, Sass/pages/contact.scss */
+input[type="reset"]:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+  background: -webkit-linear-gradient(#06C0E1, #05aac6);
+  background: -moz-linear-gradient(#06C0E1, #05aac6);
+  background: -ms-linear-gradient(#06C0E1, #05aac6);
+  background: -o-linear-gradient(#06C0E1, #05aac6);
+  background: -webkit-gradient(#06C0E1, #05aac6);
+  background: linear-gradient(#06c0e1, #05aac6); }
+
+/* line 133, Sass/pages/contact.scss */
+input[type="reset"]:active,
+input[type="button"]:active,
+input[type="submit"]:active {
+  -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3); }
+
+/* Links */
+/* line 142, Sass/pages/contact.scss */
+a {
+  color: #9ABF3C;
+  text-decoration: none; }
+
+/* line 147, Sass/pages/contact.scss */
+a:focus, a:active, a:hover {
+  text-decoration: none; }
+
+/* line 27, Sass/style.scss */
+html {
+  font-family: "acumin-pro", sans-serif;
+  color: #3b4044;
+  font-size: 16px; }
+
+/* line 35, Sass/style.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  font-size: 100%;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  vertical-align: baseline; }
+
+/* line 35, Sass/style.scss */
+body {
+  line-height: 1; }
+
+/* line 35, Sass/style.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 35, Sass/style.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 35, Sass/style.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 35, Sass/style.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 35, Sass/style.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 35, Sass/style.scss */
+.clear {
+  clear: both; }
+
+/* line 36, Sass/style.scss */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important; }
+
+/* line 39, Sass/style.scss */
+html, body {
+  margin: 0;
+  padding: 0; }
+  /* line 42, Sass/style.scss */
+  html *:focus, body *:focus {
+    outline: none; }
+  /* line 45, Sass/style.scss */
+  html a, body a {
+    color: initial;
+    text-decoration: none; }
+  /* line 49, Sass/style.scss */
+  html a:visited, body a:visited {
+    color: initial;
+    text-decoration: none; }
+  /* line 53, Sass/style.scss */
+  html a:hover, body a:hover {
+    color: initial;
+    text-decoration: none; }
+  /* line 57, Sass/style.scss */
+  html h1, body h1 {
+    font-size: 3em;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 20px; }
+  /* line 63, Sass/style.scss */
+  html h2, body h2 {
+    font-size: 2em;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 20px; }
+  /* line 70, Sass/style.scss */
+  html .easeInOut, body .easeInOut {
+    transition: 0.2s all ease-out;
+    -webkit-transition: 0.2s all ease-out;
+    -moz-transition: 0.2s all ease-out;
+    -o-transition: 0.2s all ease-out;
+    -ms-transition: 0.2s all ease-out; }
+  /* line 78, Sass/style.scss */
+  html .logo, body .logo {
+    position: relative;
+    width: 20rem;
+    height: 10rem;
+    margin: 0 auto;
+    left: 15px;
+    overflow: hidden;
+    z-index: 10; }
+  /* line 87, Sass/style.scss */
+  html #wrapper, body #wrapper {
+    position: relative;
+    overflow: hidden; }
+  /* line 91, Sass/style.scss */
+  html #main-menu, body #main-menu {
+    position: relative;
+    width: 70%;
+    height: 40px;
+    display: table;
+    padding: 0 20px;
+    margin: 20px auto 0 auto;
+    color: white;
+    text-transform: uppercase;
+    z-index: 5; }
+    /* line 101, Sass/style.scss */
+    html #main-menu ul, body #main-menu ul {
+      position: relative;
+      display: table;
+      width: auto;
+      list-style-type: none;
+      padding: 0;
+      margin: 0 auto; }
+      /* line 108, Sass/style.scss */
+      html #main-menu ul li, body #main-menu ul li {
+        display: inline-block;
+        margin: 0 20px;
+        transition: .5s all ease-in-out;
+        -webkit-transition: .5s all ease-in-out;
+        -moz-transition: .5s all ease-in-out;
+        -o-transition: .5s all ease-in-out; }
+        /* line 117, Sass/style.scss */
+        html #main-menu ul li:hover a, body #main-menu ul li:hover a {
+          transition: .5s all ease-in-out;
+          -webkit-transition: .5s all ease-in-out;
+          -moz-transition: .5s all ease-in-out;
+          -o-transition: .5s all ease-in-out; }
+        /* line 123, Sass/style.scss */
+        html #main-menu ul li:hover a:after, body #main-menu ul li:hover a:after {
+          content: "";
+          position: relative;
+          display: block;
+          width: 100%;
+          height: 30px;
+          margin-top: -30px;
+          left: 0;
+          top: 30px;
+          transition: .5s all ease-in-out;
+          -webkit-transition: .5s all ease-in-out;
+          -moz-transition: .5s all ease-in-out;
+          -o-transition: .5s all ease-in-out;
+          /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#60c2d3+0,ffffff+100&0.3+0,0+100 */
+          /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+          background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzYwYzJkMyIgc3RvcC1vcGFjaXR5PSIwLjMiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+          background: -moz-linear-gradient(top, rgba(96, 194, 211, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+          /* FF3.6-15 */
+          background: -webkit-linear-gradient(top, rgba(96, 194, 211, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+          /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to bottom, rgba(96, 194, 211, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+          /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+        /* line 146, Sass/style.scss */
+        html #main-menu ul li a, body #main-menu ul li a {
+          color: white;
+          transition: .5s all ease-in-out;
+          -webkit-transition: .5s all ease-in-out;
+          -moz-transition: .5s all ease-in-out;
+          -o-transition: .5s all ease-in-out; }
+        /* line 154, Sass/style.scss */
+        html #main-menu ul li a:hover, body #main-menu ul li a:hover {
+          color: #60c2d3;
+          transition: .5s all ease-in-out;
+          -webkit-transition: .5s all ease-in-out;
+          -moz-transition: .5s all ease-in-out;
+          -o-transition: .5s all ease-in-out; }
+      /* line 164, Sass/style.scss */
+      html #main-menu ul .current-menu-item a, body #main-menu ul .current-menu-item a {
+        color: #60c2d3; }
+        /* line 166, Sass/style.scss */
+        html #main-menu ul .current-menu-item a:after, body #main-menu ul .current-menu-item a:after {
+          content: "";
+          position: relative;
+          display: block;
+          width: 100%;
+          height: 30px;
+          margin-top: -30px;
+          left: 0;
+          top: 30px;
+          transition: .5s all ease-in-out;
+          -webkit-transition: .5s all ease-in-out;
+          -moz-transition: .5s all ease-in-out;
+          -o-transition: .5s all ease-in-out;
+          /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#60c2d3+0,ffffff+100&0.3+0,0+100 */
+          /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+          background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzYwYzJkMyIgc3RvcC1vcGFjaXR5PSIwLjMiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+          background: -moz-linear-gradient(top, rgba(96, 194, 211, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+          /* FF3.6-15 */
+          background: -webkit-linear-gradient(top, rgba(96, 194, 211, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+          /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to bottom, rgba(96, 194, 211, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+          /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+  /* line 192, Sass/style.scss */
+  html #social-menu, body #social-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    display: table;
+    margin: 0 auto;
+    color: white;
+    text-transform: uppercase;
+    z-index: 5; }
+    /* line 202, Sass/style.scss */
+    html #social-menu ul, body #social-menu ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0; }
+      /* line 206, Sass/style.scss */
+      html #social-menu ul li, body #social-menu ul li {
+        display: inline-block;
+        margin: 0 10px;
+        transition: all .5s ease-in-out;
+        -webkit-transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+        -o-transition: all .5s ease-in-out; }
+  /* line 217, Sass/style.scss */
+  html .wrapper, body .wrapper {
+    width: 100%;
+    margin: 0 auto; }
+    /* line 221, Sass/style.scss */
+    html .wrapper svg, body .wrapper svg {
+      position: absolute;
+      width: 100%;
+      margin: -20vw auto 0 auto; }
+    /* line 226, Sass/style.scss */
+    html .wrapper .entry-content, body .wrapper .entry-content {
+      position: relative;
+      display: table;
+      top: 40%;
+      width: 70%;
+      min-height: 520px;
+      height: auto;
+      padding: 0 20px;
+      padding-top: 20px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px;
+      /*box-shadow: 0 10px 50px 5px rgba(0, 0, 0, 0.13);*/ }
+      /* line 240, Sass/style.scss */
+      html .wrapper .entry-content h1, body .wrapper .entry-content h1 {
+        font-size: 3em;
+        font-weight: 100;
+        text-align: center;
+        margin-bottom: 20px; }
+      /* line 246, Sass/style.scss */
+      html .wrapper .entry-content .post-edit-link, body .wrapper .entry-content .post-edit-link {
+        position: absolute;
+        display: table;
+        top: 10px;
+        right: 10px;
+        font-size: .9em;
+        color: #3b4044; }
+      /* line 254, Sass/style.scss */
+      html .wrapper .entry-content:before, body .wrapper .entry-content:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: -20px;
+        top: -60px;
+        bottom: 100%;
+        width: calc(100% + 40px);
+        height: 150px;
+        background: #3b4044;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        border-bottom-left-radius: 75px;
+        border-bottom-right-radius: 75px; }
+      /* line 269, Sass/style.scss */
+      html .wrapper .entry-content:after, body .wrapper .entry-content:after {
+        content: "";
+        /*top: 100px solid red;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        height: 0;
+        width: 100%;*/
+        position: absolute;
+        top: -30px;
+        bottom: 100%;
+        width: 100%;
+        height: 500px;
+        left: 0%;
+        right: 0%;
+        z-index: -2;
+        box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.17); }
+  /* line 290, Sass/style.scss */
+  html #footer, body #footer {
+    position: relative;
+    display: table;
+    width: 70%;
+    padding: 0 20px;
+    margin: 0 auto;
+    background-color: white;
+    color: #e7e7e7;
+    text-align: center; }
+    /* line 299, Sass/style.scss */
+    html #footer #copyright, body #footer #copyright {
+      padding: 1rem 0; }

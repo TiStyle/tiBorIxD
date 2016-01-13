@@ -1,0 +1,153 @@
+@import "_partials/variables";
+
+body.single-portfolio{
+    .tiSlide{
+        overflow:hidden;
+        .content{
+            position: absolute;
+            top: 0;
+            right: 0;
+            max-width: calc(353px - 60px);
+            width: calc(30% - 60px);
+            height: calc(100% - 39px);
+            display: block;
+            padding: 20px 30px;
+            background-color: transparentize( $secondary-color, 0.20 );
+            color: $text-color-lighter;
+            font-size: 1.2em;
+            font-weight: lighter;
+            z-index: 1000;
+            .entry-title{
+                color: white;
+                text-align: left;
+                font-size:1.4em;
+                
+                padding-bottom: 20px;
+                margin-bottom: 0;
+                border-bottom: 1px solid white;
+                a{
+                    color: white;
+                }
+            }
+            h4{
+                margin: 7px 0;
+                font-size:.9em;
+                font-weight:100;
+                line-height: 1.2em;
+            }
+            p{
+                font-size: .8em;
+                font-weight: normal;
+                line-height: 1.4em;
+            }
+        }
+        .cycle-slide{
+            max-width:100%;
+        }
+        .cycle-pager, .slide-control{
+            position: relative;
+            display: block;
+            z-index: 999;
+        }
+        .cycle-pager{
+            position: relative;
+            display: table;
+            margin:0 auto;
+            top:90%;
+            span{
+                width: 10px;
+                height: 10px;
+                display: inline-block;
+                margin: 0 10px;
+                background: transparent;
+                color: transparent;
+                border: 1px solid white;
+                box-shadow: 0 0 0 1px $secondary-color;
+                cursor: pointer;
+                transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                -o-transform: rotate(45deg);
+            }
+            .cycle-pager-active{
+                background: $primary-color;
+            }
+        }
+        .slide-control{
+            display: block;
+            width: 66%;
+            top: 40%;
+            padding: 0 2%;
+            .slide-prev{
+                cursor:pointer;
+                i{
+                    float:left;
+                    font-size:3em;
+                    font-size:4vmax;
+                    color:white;
+                    text-shadow: 10px 0 10px $secondary-color, 2px 0 5px $secondary-color;
+                    &:hover{
+                        transform: scale(1.2);
+                        -webkit-transform: scale(1.2);
+                        -moz-transform: scale(1.2);
+                        -o-transform: scale(1.2);
+                    }
+                }
+            }
+            .slide-next{
+                cursor:pointer;
+                i{
+                    float:right;
+                    font-size:3em;
+                    font-size:4vmax;
+                    color:white;
+                    text-shadow: -10px 0 10px $secondary-color, -2px 0 5px $secondary-color;
+                    &:hover{
+                        transform: scale(1.2);
+                        -webkit-transform: scale(1.2);
+                        -moz-transform: scale(1.2);
+                        -o-transform: scale(1.2);
+                    }
+                }
+            }
+        }
+    }
+    .aside{
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 40%;
+        .nav-previous{
+            position: relative;
+            float:left;
+            left:-50px;
+            font-size: 6em;
+            i{
+                &:hover{
+                    transform: scale(1.2);
+                    -webkit-transform: scale(1.2);
+                    -moz-transform: scale(1.2);
+                    -o-transform: scale(1.2);
+                }   
+            }
+        }
+        .nav-next{
+            position: relative;
+            float:right;
+            left:50px;
+            font-size: 6em;
+            i{
+                &:hover{
+                    transform: scale(1.2);
+                    -webkit-transform: scale(1.2);
+                    -moz-transform: scale(1.2);
+                    -o-transform: scale(1.2);
+                }
+            }
+        }
+        i{
+            color: transparent;
+            text-shadow: 0 0 0px white , 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+    }
+}

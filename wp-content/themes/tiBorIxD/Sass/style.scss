@@ -1,0 +1,303 @@
+/*
+Theme Name: tiBorIxD
+Theme URI: http://ti-bor.nl/
+Author: Tibor Dujmovic
+Author URI: http://ti-bor.nl/
+Description: This is a theme created by: <strong><a href="www.ti-bor.nl" target="_blank">tiBor interAction deSign</a></strong>.
+License: GNU General Public License
+License URI: https://www.gnu.org/licenses/gpl.html
+Tags: black, blue, white, light, one-column, fluid-layout, responsive-layout, custom-menu, featured-images, microformats, sticky-post, threaded-comments, translation-ready
+Text Domain: tiBorIxD
+
+tiBorIxD WordPress Theme © 2016 tiBor
+tiBorIxD is distributed under the terms of the GNU GPL
+*/
+@import "compass";
+@import "compass/reset";
+
+// add partials
+@import "_partials/variables";
+@import "_partials/colums";
+
+// add pages styling
+@import "pages/home";
+@import "pages/portfolio";
+@import "pages/contact";
+
+html{
+    font-family: $base-font-family;
+    color: $text-color;
+    font-size: $base-font-size;
+}
+
+// Blank style
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{font-size:100%;padding:0;border:0;margin:0;vertical-align:baseline}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}.clear{clear:both}
+.sticky{}.bypostauthor{}.wp-caption{}.wp-caption-text{}.gallery-caption{}.alignright{}.alignleft{}.aligncenter{}.screen-reader-text{clip:rect(1px, 1px, 1px, 1px);position:absolute !important}
+
+
+html, body{
+    margin:0;
+    padding:0;
+    *:focus{
+        outline:none;
+    }
+    a{
+        color:initial;
+        text-decoration: none;
+    }
+    a:visited{
+        color:initial;
+        text-decoration: none;
+    }
+    a:hover{
+        color:initial;
+        text-decoration: none;
+    }
+    h1{
+        font-size: 3em;
+        font-weight: 100;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    h2{
+        font-size: 2em;
+        font-weight: 100;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .easeInOut{
+        transition: 0.2s all ease-out;
+        -webkit-transition: 0.2s all ease-out;
+        -moz-transition: 0.2s all ease-out;
+        -o-transition: 0.2s all ease-out;
+        -ms-transition: 0.2s all ease-out;
+    }
+
+    .logo{
+        position: relative;
+        width: 20rem;
+        height: 10rem;
+        margin: 0 auto;
+        left:15px;
+        overflow: hidden;
+        z-index: 10;
+    }
+    #wrapper{
+        position: relative;
+        overflow:hidden;
+    }
+    #main-menu{
+        position: relative;
+        width: 70%;
+        height: 40px;
+        display: table;
+        padding: 0 20px;
+        margin: 20px auto 0 auto;
+        color: white;
+        text-transform: uppercase;
+        z-index: 5;
+        ul{
+            position: relative;
+            display: table;
+            width: auto;
+            list-style-type: none;
+            padding: 0;
+            margin: 0 auto;
+            li{
+                display: inline-block;
+                margin:0 20px;
+                
+                transition: .5s all ease-in-out;
+                -webkit-transition: .5s all ease-in-out;
+                -moz-transition: .5s all ease-in-out;
+                -o-transition: .5s all ease-in-out;
+                &:hover{
+                    a{
+                        transition: .5s all ease-in-out;
+                        -webkit-transition: .5s all ease-in-out;
+                        -moz-transition: .5s all ease-in-out;
+                        -o-transition: .5s all ease-in-out;
+                    }
+                    a:after{
+                        content: "";
+                        position: relative;
+                        display: block;
+                        width: 100%;
+                        height: 30px;
+                        margin-top:-30px;
+                        left: 0;
+                        top:30px;
+                        
+                        transition: .5s all ease-in-out;
+                        -webkit-transition: .5s all ease-in-out;
+                        -moz-transition: .5s all ease-in-out;
+                        -o-transition: .5s all ease-in-out;
+                        
+                        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#60c2d3+0,ffffff+100&0.3+0,0+100 */
+                        /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+                        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzYwYzJkMyIgc3RvcC1vcGFjaXR5PSIwLjMiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+                        background: -moz-linear-gradient(top,  rgba(96,194,211,0.3) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+                        background: -webkit-linear-gradient(top,  rgba(96,194,211,0.3) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+                        background: linear-gradient(to bottom,  rgba(96,194,211,0.3) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                    }
+                }
+                a{
+                    color:white;
+                    
+                    transition: .5s all ease-in-out;
+                    -webkit-transition: .5s all ease-in-out;
+                    -moz-transition: .5s all ease-in-out;
+                    -o-transition: .5s all ease-in-out;
+                }
+                a:hover{
+                    color: $primary-color;
+                    
+                    transition: .5s all ease-in-out;
+                    -webkit-transition: .5s all ease-in-out;
+                    -moz-transition: .5s all ease-in-out;
+                    -o-transition: .5s all ease-in-out;
+                }
+            }
+            .current-menu-item{
+                a{
+                    color: $primary-color;
+                    &:after{
+                        content: "";
+                        position: relative;
+                        display: block;
+                        width: 100%;
+                        height: 30px;
+                        margin-top:-30px;
+                        left: 0;
+                        top:30px;
+                        
+                        transition: .5s all ease-in-out;
+                        -webkit-transition: .5s all ease-in-out;
+                        -moz-transition: .5s all ease-in-out;
+                        -o-transition: .5s all ease-in-out;
+                        
+                        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#60c2d3+0,ffffff+100&0.3+0,0+100 */
+                        /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+                        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzYwYzJkMyIgc3RvcC1vcGFjaXR5PSIwLjMiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+                        background: -moz-linear-gradient(top,  rgba(96,194,211,0.3) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+                        background: -webkit-linear-gradient(top,  rgba(96,194,211,0.3) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+                        background: linear-gradient(to bottom,  rgba(96,194,211,0.3) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                    }
+                }
+            }
+        }
+    }
+    #social-menu{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: auto;
+        display: table;
+        margin: 0 auto;
+        color: white;
+        text-transform: uppercase;
+        z-index: 5;
+        ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            li{
+                display: inline-block;
+                margin:0 10px;
+                
+                transition: all .5s ease-in-out;
+                -webkit-transition: all .5s ease-in-out;
+                -moz-transition: all .5s ease-in-out;
+                -o-transition: all .5s ease-in-out;
+            }
+        }
+    }
+    .wrapper{
+        width:100%;
+        
+        margin:0 auto;
+        svg{
+            position: absolute;
+            width:100%;
+            margin:-20vw auto 0 auto;
+        }
+        .entry-content{
+            position: relative;
+            display: table;
+            top: 40%;
+            width: 70%;
+            min-height: 520px;
+            height:auto;
+            padding: 0 20px;
+            padding-top:20px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-top-left-radius: 2px;
+            border-top-right-radius: 2px;
+            /*box-shadow: 0 10px 50px 5px rgba(0, 0, 0, 0.13);*/
+            h1{
+                font-size: 3em;
+                font-weight: 100;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .post-edit-link{
+                position: absolute;
+                display: table;
+                top: 10px;
+                right: 10px;
+                font-size:.9em;
+                color: $text-color;
+            }
+            &:before{
+                content: "";
+                position: absolute;
+                z-index: -1;
+                left: -20px;
+                top: -60px;
+                bottom: 100%;
+                width: calc(100% + 40px);
+                height: 150px;
+                background: #3b4044;
+                border-top-left-radius: 4px;
+                border-top-right-radius: 4px;
+                border-bottom-left-radius: 75px;
+                border-bottom-right-radius: 75px;
+            }
+            &:after{
+                content: "";
+                
+                /*top: 100px solid red;
+                border-left: 50px solid transparent;
+                border-right: 50px solid transparent;
+                height: 0;
+                width: 100%;*/
+                
+                position: absolute;
+                top: -30px;
+                bottom: 100%;
+                width: 100%;
+                height: 500px;
+                left: 0%;
+                right: 0%;
+                z-index: -2;
+                box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.17);
+            }
+        }
+    }
+    #footer{
+        position: relative;
+        display: table;
+        width:70%;
+        padding: 0 20px;
+        margin: 0 auto;
+        background-color:white;
+        color: $text-color-light;
+        text-align: center;
+        #copyright{
+            padding:1rem 0;
+        }
+    }
+}
