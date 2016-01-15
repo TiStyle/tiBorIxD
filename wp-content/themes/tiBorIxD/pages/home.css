@@ -5,6 +5,7 @@
 body.page-portfolio .item {
   position: relative;
   width: 33.08%;
+  max-width: 900px;
   bottom: 0;
   display: inline-block;
   float: left;
@@ -16,9 +17,10 @@ body.page-portfolio .item {
     /* line 4, ../Sass/pages/home.scss */
     body.page-portfolio .item {
       width: 100%;
+      max-width: 900px;
       display: block;
       margin-bottom: 0.8%; } }
-  /* line 20, ../Sass/pages/home.scss */
+  /* line 22, ../Sass/pages/home.scss */
   body.page-portfolio .item:hover {
     /*bottom: -10px;*/
     box-shadow: 0 0px 15px 2px rgba(0, 0, 0, 0.4);
@@ -27,7 +29,7 @@ body.page-portfolio .item {
     -moz-transition: 0.2s all ease-out;
     -o-transition: 0.2s all ease-out;
     -ms-transition: 0.2s all ease-out; }
-    /* line 29, ../Sass/pages/home.scss */
+    /* line 31, ../Sass/pages/home.scss */
     body.page-portfolio .item:hover .content {
       position: absolute;
       display: block !important;
@@ -39,7 +41,7 @@ body.page-portfolio .item {
       -moz-transition: 0.2s opacity ease-out;
       -o-transition: 0.2s opacity ease-out;
       -ms-transition: 0.2s opacity ease-out; }
-  /* line 44, ../Sass/pages/home.scss */
+  /* line 46, ../Sass/pages/home.scss */
   body.page-portfolio .item .image {
     position: relative;
     width: 100%;
@@ -47,7 +49,7 @@ body.page-portfolio .item {
     margin-right: 0px;
     color: #f8f8f9;
     overflow: hidden; }
-    /* line 51, ../Sass/pages/home.scss */
+    /* line 53, ../Sass/pages/home.scss */
     body.page-portfolio .item .image img {
       position: relative;
       min-width: 120%;
@@ -57,20 +59,20 @@ body.page-portfolio .item {
       display: block;
       font-size: 21px;
       text-align: center; }
-      /* line 61, ../Sass/pages/home.scss */
+      /* line 63, ../Sass/pages/home.scss */
       body.page-portfolio .item .image img span:first-child {
         font-weight: bold; }
-      /* line 64, ../Sass/pages/home.scss */
+      /* line 66, ../Sass/pages/home.scss */
       body.page-portfolio .item .image img span:nth-child(2) {
         font-size: 36px;
         padding: 2px 5px; }
-    /* line 70, ../Sass/pages/home.scss */
+    /* line 72, ../Sass/pages/home.scss */
     body.page-portfolio .item .image i {
       position: relative;
       display: table;
       margin: 15% auto;
       font-size: 8em; }
-  /* line 77, ../Sass/pages/home.scss */
+  /* line 79, ../Sass/pages/home.scss */
   body.page-portfolio .item .content {
     position: absolute;
     display: block;
@@ -92,7 +94,7 @@ body.page-portfolio .item {
     -moz-transition: 0.2s opacity ease-out;
     -o-transition: 0.2s opacity ease-out;
     -ms-transition: 0.2s opacity ease-out; }
-    /* line 100, ../Sass/pages/home.scss */
+    /* line 102, ../Sass/pages/home.scss */
     body.page-portfolio .item .content .itemTitle {
       width: 100%;
       display: block;
@@ -105,16 +107,20 @@ body.page-portfolio .item {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis; }
-    /* line 114, ../Sass/pages/home.scss */
+    /* line 116, ../Sass/pages/home.scss */
     body.page-portfolio .item .content a:link, body.page-portfolio .item .content a:visited {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
       display: table;
+      text-align: center;
       margin: 10% auto;
       color: white;
       text-decoration: none; }
-    /* line 121, ../Sass/pages/home.scss */
+    /* line 127, ../Sass/pages/home.scss */
     body.page-portfolio .item .content .fa {
       font-size: 21px; }
-      /* line 123, ../Sass/pages/home.scss */
+      /* line 129, ../Sass/pages/home.scss */
       body.page-portfolio .item .content .fa:hover {
         font-size: 36px;
         transform: rotate(360deg);

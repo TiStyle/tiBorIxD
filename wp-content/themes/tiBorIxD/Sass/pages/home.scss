@@ -4,6 +4,7 @@ body.page-portfolio{
     .item{
         position: relative;
         width: 33.08%;
+        max-width: 900px;
         bottom:0;
         
         display: inline-block;
@@ -14,6 +15,7 @@ body.page-portfolio{
         border-radius: 2px;
         @media #{$medium-and-down} {
             width:100%;
+            max-width: 900px;
             display: block;
             margin-bottom:0.8%;
         }
@@ -112,9 +114,13 @@ body.page-portfolio{
             }
             a{
                 &:link, &:visited{
+                    position: absolute;
+                    width: 100%;
+                    bottom: 0;
                     display: table;
-                    margin:10% auto;
-                    color:white;
+                    text-align: center;
+                    margin: 10% auto;
+                    color: white;
                     text-decoration: none;
                 }
             }
@@ -122,10 +128,10 @@ body.page-portfolio{
                 font-size:21px;
                 &:hover{
                     font-size:36px;
-        transform: rotate(360deg);
-        -webkit-transform: rotate(360deg);
-        -moz-transform: rotate(360deg);
-        -o-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                    -webkit-transform: rotate(360deg);
+                    -moz-transform: rotate(360deg);
+                    -o-transform: rotate(360deg);
                 }
             }
         }
